@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textViewTitle1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_main"
+        android:maxLines="5"
+        android:text="title"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="date"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle1"
+        android:layout_marginTop="@dimen/small_margin"/>
+
+    <ImageView
+        android:id="@+id/imageViewComment"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="@dimen/small_margin"
+        android:src="@drawable/comment"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDate"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toTopOf="@+id/textViewDate"
+        app:tint="@color/blue" />
+
+    <TextView
+        android:id="@+id/textViewCommentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewComment"
+        app:layout_constraintStart_toEndOf="@+id/imageViewComment"
+        app:layout_constraintTop_toTopOf="@+id/imageViewComment" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/coinstraint2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:background="@color/gray_backgorund"
+        app:layout_constraintEnd_toEndOf="parent"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate">
+
+        <TextView
+            android:id="@+id/textViewAuthorPrikaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author:"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:text="Miljnja eqweqewq"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAuthorPrikaz"
+            app:layout_constraintStart_toEndOf="@+id/textViewAuthorPrikaz"
+            app:layout_constraintTop_toTopOf="@+id/textViewAuthorPrikaz" />
+
+
+        <TextView
+            android:id="@+id/textViewIzvorPrikaz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="izvor:"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAuthor"
+            app:layout_constraintStart_toEndOf="@+id/textViewAuthor" />
+
+        <TextView
+            android:id="@+id/textViewIzvor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
+            android:text="Index"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewIzvorPrikaz"
+            app:layout_constraintStart_toEndOf="@+id/textViewIzvorPrikaz"
+            app:layout_constraintTop_toTopOf="@+id/textViewIzvorPrikaz" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:layout_marginRight="@dimen/small_margin"
+        android:maxLines="6"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintEnd_toEndOf="@+id/coinstraint2"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/coinstraint2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

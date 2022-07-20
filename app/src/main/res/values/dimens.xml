@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">10dp</dimen>
+    <dimen name="tex_size_small_news">15sp</dimen>
+    <dimen name="text_size_category">10sp</dimen>
+    <dimen name="margin_main">15dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="medium_margin">10dp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_title">25sp</dimen>
+    <dimen name="margin_smallnews">12dp</dimen>
+    <dimen name="margin_left">3dp</dimen>
+    <dimen name="text_size_drawer">15sp</dimen>
+    <dimen name="text_size_drawer_rv">25sp</dimen>
+    <dimen name="margin_small_news">4dp</dimen>
+</resources>

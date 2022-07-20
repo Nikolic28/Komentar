@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <Button
+            android:id="@+id/button_latest"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="NAJNOVIJE"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <View
+            android:id="@+id/view_latest"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/red"
+            app:layout_constraintEnd_toEndOf="@+id/button_latest"
+            app:layout_constraintStart_toStartOf="@+id/button_latest"
+            app:layout_constraintTop_toBottomOf="@+id/button_latest" />
+
+        <Button
+            android:id="@+id/button_mostread"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="NAJCITANIJE"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/button_latest"
+            app:layout_constraintTop_toTopOf="@+id/button_latest" />
+
+        <View
+            android:id="@+id/view_mostread"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/gray"
+
+            app:layout_constraintEnd_toEndOf="@+id/button_mostread"
+            app:layout_constraintStart_toEndOf="@+id/button_latest"
+            app:layout_constraintTop_toBottomOf="@+id/button_mostread" />
+
+        <Button
+            android:id="@+id/button_comments"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="KOMENTARI"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/button_mostread"
+            app:layout_constraintStart_toEndOf="@+id/button_mostread"
+            app:layout_constraintTop_toTopOf="@+id/button_mostread" />
+
+
+        <View
+            android:id="@+id/view_comments"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@color/gray"
+
+            app:layout_constraintEnd_toEndOf="@+id/button_comments"
+            app:layout_constraintStart_toEndOf="@+id/button_mostread"
+            app:layout_constraintTop_toBottomOf="@+id/button_comments" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_mostread"
+            android:layout_marginTop="@dimen/margin_small"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
